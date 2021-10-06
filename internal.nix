@@ -67,7 +67,7 @@ rec {
             {
               owner = org;
               inherit repo;
-              inherit rev;
+              inherit rev ref;
               sha256 = hash; # FIXME: what if sha3?
             } else
           builtins.fetchGit {
